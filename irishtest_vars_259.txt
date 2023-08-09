@@ -1,0 +1,14 @@
+[MeanSL]=5.814;
+[size]=50;
+[VarSL]=0.581228571428572;
+[MeanSL_Se]=4.98666666666667;
+[MeanSL_Vi]=6.53529411764706;
+[MeanSL_Ve]=5.82222222222222;
+[VarSL_Se]=0.138380952380952;
+[VarSL_Vi]=0.319926470588235;
+[VarSL_Ve]=0.135947712418301;
+[Length_Se]=15;
+[Length_Vi]=17;
+[Length_Ve]=18;
+[DF_WS]=27.8759306874539;
+[variables]="[MeanSL],[size],[VarSL],[MeanSL_Se],[MeanSL_Vi],[MeanSL_Ve],[VarSL_Se],[VarSL_Vi],[VarSL_Ve],[Length_Se],[Length_Vi],[Length_Ve],[DF_WS]";
