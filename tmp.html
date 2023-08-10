@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Preview question: json test</title>
+    <link rel="shortcut icon" href="https://ecampus.idems.international/theme/image.php/classic/theme/1687299139/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Preview question: json test" />
+<link rel="stylesheet" type="text/css" href="https://ecampus.idems.international/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://ecampus.idems.international/theme/styles.php/classic/1687299139_1687299195/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/ecampus.idems.international","homeurl":{},"sesskey":"mx4mWzKDHQ","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1687299139","slasharguments":1,"theme":"classic","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1687299139","admin":"admin","svgicons":true,"usertimezone":"Europe\/London","courseId":312,"courseContextId":86125,"contextid":86125,"contextInstanceId":312,"langrev":1691637483,"templaterev":"1687299139"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/ecampus.idems.international\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/ecampus.idems.international\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/ecampus.idems.international\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/ecampus.idems.international\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/ecampus.idems.international\/theme\/yui_combo.php?m\/1687299139\/","combine":true,"comboBase":"https:\/\/ecampus.idems.international\/theme\/yui_combo.php?","ext":false,"root":"m\/1687299139\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_checklist-linkselect":{"requires":["node","event-valuechange"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/ecampus.idems.international\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/ecampus.idems.international\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1687299139\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/ecampus.idems.international\/lib\/javascript.php\/1687299139\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/ecampus.idems.international\/lib\/javascript.php\/1687299139\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/ecampus.idems.international\/lib\/javascript.php\/1687299139\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="moodle-validation" content="9ec2ed610ce4d2f29f08e33311a122d1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-question-bank-previewquestion-preview" class="format-topics  path-question path-question-bank path-question-bank-previewquestion chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam ecampus-idems-international pagelayout-popup course-312 context-86125 category-6 ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://ecampus.idems.international/lib/javascript.php/1687299139/lib/polyfills/polyfill.js"></script>
+<script src="https://ecampus.idems.international/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://ecampus.idems.international/lib/javascript.php/1687299139/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <div id="page" class="container-fluid">
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" aria-label="Content">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><form id="responseform" method="post" action="https://ecampus.idems.international/question/bank/previewquestion/preview.php?id=116193&amp;previewid=325836&amp;courseid=312&amp;variant=18&amp;correctness=1&amp;marks=2&amp;markdp=2&amp;feedback=1&amp;generalfeedback=1&amp;rightanswer=1&amp;history=0" enctype="multipart/form-data" autocomplete="off">
+    <div class="d-flex">
+        <h2 class="mt-2"><img class="icon " title="STACK" alt="STACK" src="https://ecampus.idems.international/theme/image.php/classic/qtype_stack/1687299139/icon" /></h2>
+        <h2 class="ml-2 mt-2"> json test</h2>
+        <h3 class="px-2 py-1 ml-2 mt-2">
+            <span class="badge bg-primary text-light">Version 5 (latest)</span>
+        </h3>
+    </div>
+    <div class="d-flex">
+        <div class="badge-primary h-50 px-2 mt-n2">
+            <span class="accesshide">ID number</span>
+            
+        </div>
+    </div>
+    <br>
+    <div>
+        <input type="hidden" name="sesskey" value="mx4mWzKDHQ">
+        <input type="hidden" name="slots" value="1">
+        <input type="hidden" name="scrollpos" value="" id="scrollpos">
+    </div>
+    <div id="question-325836-1" class="que stack dfexplicitvaildate notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Not yet answered</div><div class="grade">Marked out of 1.00</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q325836:1_:sequencecheck" value="1" /><div class="questiontestslink"><a href="https://ecampus.idems.international/question/type/stack/questiontestrun.php?questionid=116193&amp;seed=18&amp;courseid=312"><i class="icon fa fa-exclamation-circle text-danger fa-fw " title="Question is missing tests or variants." aria-label="Question is missing tests or variants."></i>Question is missing tests or variants.</a></div><h1>JSON Data Viewer</h1><div id="data-container"></div><script> <br />
+document.addEventListener("DOMContentLoaded", async () => {<br />
+    const dataContainer = document.getElementById("data-container");<br />
+<br />
+    try {<br />
+        const response = await fetch("https://raw.githubusercontent.com/IDEMSInternational/iris_data/main/all_data.json");<br />
+        const jsonData = await response.json();<br />
+<br />
+        const pre = document.createElement("pre");<br />
+        pre.textContent = JSON.stringify(jsonData, null, 2);<br />
+        dataContainer.appendChild(pre);<br />
+    } catch (error) {<br />
+        dataContainer.innerHTML = "Error loading JSON data.";<br />
+        console.error("Error fetching JSON data:", error);<br />
+    }<br />
+});<br />
+ </script><p><input type="text" name="q325836:1_ans1" id="q325836:1_ans1" size="16.5" style="width: 13.6em" autocapitalize="none" spellcheck="false" class="algebraic" value="" /> <div class="stackinputfeedback standard empty" id="q325836:1_ans1_val"></div></p><div class="im-controls"><input type="submit" id="q325836:1_-submit" name="q325836:1_-submit" value="Check" class="submit btn btn-secondary" /></div></div></div></div>
+    <div id="previewcontrols" class="controls input-group">
+        <input type="submit" name="restart" value="Start again" class="btn btn-secondary mr-1 mb-1" id="id_restart_question_preview"  disabled="disabled">
+        <input type="submit" name="save" value="Save" class="btn btn-secondary mr-1 mb-1" id="id_save_question_preview" >
+        <input type="submit" name="fill" value="Fill in correct responses" class="btn btn-secondary mr-1 mb-1" >
+        <input type="submit" name="finish" value="Submit and finish" class="btn btn-secondary mr-1 mb-1" id="id_finish_question_preview" >
+            <input type="button" name="close" value="Close preview" class="btn btn-secondary mr-1 mb-1" id="close-previewquestion-page">
+    </div>
+</form>
+<br>
+    <a data-toggle="collapse" href="#commentcollapse" role="button" aria-expanded="false" aria-controls="commentcollapse">
+        <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
+        Comments
+    </a>
+    <div class="collapse" id="commentcollapse">
+        <div style="display:none" id="cmt-tmpl"><div class="comment-message"><div class="comment-message-meta mr-3"><span class="picture">___picture___</span><span class="user">___name___</span> - <span class="time">___time___</span></div><div class="text">___content___</div></div></div><div class="mdl-left"><a class="showcommentsnonjs" href="https://ecampus.idems.international/question/bank/previewquestion/preview.php?id=116193&amp;courseid=312&amp;behaviour=deferredfeedback&amp;maxmark=1&amp;correctness=1&amp;marks=2&amp;markdp=2&amp;feedback=1&amp;generalfeedback=1&amp;rightanswer=1&amp;history&amp;nonjscomment=1&amp;comment_itemid=116193&amp;comment_context=1&amp;comment_component=qbank_comment&amp;comment_area=question">Show comments</a><div id="comment-ctrl-64d4a2343bc63" class="comment-ctrl"><ul id="comment-list-64d4a2343bc63" class="comment-list comments-loaded"><li class="first"></li></ul><div id="comment-pagination-64d4a2343bc63" class="comment-pagination"></div><div class="comment-area"><div class="db"><textarea name="content" rows="2" id="dlg-content-64d4a2343bc63" aria-label="Add a comment..." class="fullwidth"></textarea></div><div class="fd" id="comment-action-64d4a2343bc63"><a id="comment-action-post-64d4a2343bc63" href="#">Save comment</a></div></div><div class="clearer"></div></div></div>
+    </div>
+    
+<form autocomplete="off" action="https://ecampus.idems.international/question/bank/previewquestion/preview.php" method="post" accept-charset="utf-8" id="mform1_BKgooAHJJCgC3iv" class="mform">
+	<div style="display: none;"><input type="hidden" name="id" value="116193" />
+<input type="hidden" name="courseid" value="312" />
+<input name="mform_isexpanded_id_attemptoptionsheader" type="hidden" value="0" />
+<input name="mform_isexpanded_id_displayoptionsheader" type="hidden" value="0" />
+<input name="sesskey" type="hidden" value="mx4mWzKDHQ" />
+<input name="_qf__qbank_previewquestion_form_preview_options_form" type="hidden" value="1" />
+</div>
+<div class="collapsible-actions">
+    <a id="collapsesections64d4a2343adc664d4a234391525" href="#" aria-expanded="false" class="btn btn-link p-1 collapseexpand collapsemenu collapsed" role="button">
+        <span class="collapseall">Collapse all</span>
+        <span class="expandall">Expand all</span>
+    </a>
+</div>
+
+	<fieldset class="clearfix collapsible collapsed"  id="id_attemptoptionsheader"><legend class="d-flex align-items-center">
+        <div class="position-relative d-flex ftoggler align-items-center position-relative mr-1">
+            <a data-toggle="collapse"
+                href="#id_attemptoptionsheadercontainer"
+                role="button"
+                aria-expanded="false"
+                aria-controls="id_attemptoptionsheadercontainer"
+                class="btn btn-icon mr-1 icons-collapse-expand stretched-link fheader collapsed"
+                >
+                <span class="expanded-icon icon-no-margin p-2" title="Collapse">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true"  ></i>
+                </span>
+                <span class="collapsed-icon icon-no-margin p-2" title="Expand">
+                    <span class="dir-rtl-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                    <span class="dir-ltr-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                </span>
+                <span class="sr-only">Preview options</span>
+            </a>
+            <h3 class="d-flex align-self-stretch align-items-center mb-0" aria-hidden="true">
+                Preview options
+            </h3>
+        </div>
+        
+    </legend>
+<div id="id_attemptoptionsheadercontainer" class="fcontainer collapseable collapse  "><div id="fitem_id_version" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_version">
+                    Question version
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="select">
+        <select class="custom-select
+                       
+                       "
+            name="version"
+            id="id_version"
+            
+            
+             >
+            <option value="116189"  
+                >1</option>
+            <option value="116190"  
+                >2</option>
+            <option value="116191"  
+                >3</option>
+            <option value="116192"  
+                >4</option>
+            <option value="116193" selected 
+                >5</option>
+        </select>
+        <div class="form-control-feedback invalid-feedback" id="id_error_version" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_behaviour" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_behaviour">
+                    How questions behave
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            <a class="btn btn-link p-0" role="button"
+    data-container="body" data-toggle="popover"
+    data-placement="right" data-content="&lt;div class=&quot;no-overflow&quot;&gt;&lt;p&gt;Students can interact with the questions in the quiz in various different ways. For example, you may wish the students to enter an answer to each question and then submit the entire quiz, before anything is graded or they get any feedback. That would be &#039;Deferred feedback&#039; mode.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, you may wish for students to submit each question as they go along to get immediate feedback, and if they do not get it right immediately, have another try for fewer marks. That would be &#039;Interactive with multiple tries&#039; mode.&lt;/p&gt;
+
+&lt;p&gt;Those are probably the two most commonly used modes of behaviour.&lt;/p&gt;
+&lt;/div&gt; &lt;div class=&quot;helpdoclink&quot;&gt;&lt;a href=&quot;https://docs.moodle.org/400/en/question/behaviour&quot;&gt;&lt;i class=&quot;icon fa fa-book fa-fw iconhelp icon-pre&quot; aria-hidden=&quot;true&quot;  &gt;&lt;/i&gt;More help&lt;/a&gt;&lt;/div&gt;"
+    data-html="true" tabindex="0" data-trigger="focus">
+  <i class="icon fa fa-question-circle text-info fa-fw "  title="Help with How questions behave" role="img" aria-label="Help with How questions behave"></i>
+</a>
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="select">
+        <select class="custom-select
+                       
+                       "
+            name="behaviour"
+            id="id_behaviour"
+            
+            
+             >
+            <option value="adaptive"  
+                >Adaptive mode</option>
+            <option value="adaptivenopenalty"  
+                >Adaptive mode (no penalties)</option>
+            <option value="deferredfeedback" selected 
+                >Deferred feedback</option>
+            <option value="deferredcbm"  
+                >Deferred feedback with CBM</option>
+            <option value="immediatefeedback"  
+                >Immediate feedback</option>
+            <option value="immediatecbm"  
+                >Immediate feedback with CBM</option>
+            <option value="interactive"  
+                >Interactive with multiple tries</option>
+        </select>
+        <div class="form-control-feedback invalid-feedback" id="id_error_behaviour" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_maxmark" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_maxmark">
+                    Marked out of
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="float">
+        <input type="text"
+                class="form-control "
+                name="maxmark"
+                id="id_maxmark"
+                value="1"
+                size="5"
+                 >
+        <div class="form-control-feedback invalid-feedback" id="id_error_maxmark" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_variant" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_variant">
+                    Question variant
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="select">
+        <select class="custom-select
+                       
+                       "
+            name="variant"
+            id="id_variant"
+            
+            
+             >
+            <option value="1"  
+                >1</option>
+            <option value="2"  
+                >2</option>
+            <option value="3"  
+                >3</option>
+            <option value="4"  
+                >4</option>
+            <option value="5"  
+                >5</option>
+            <option value="6"  
+                >6</option>
+            <option value="7"  
+                >7</option>
+            <option value="8"  
+                >8</option>
+            <option value="9"  
+                >9</option>
+            <option value="10"  
+                >10</option>
+            <option value="11"  
+                >11</option>
+            <option value="12"  
+                >12</option>
+            <option value="13"  
+                >13</option>
+            <option value="14"  
+                >14</option>
+            <option value="15"  
+                >15</option>
+            <option value="16"  
+                >16</option>
+            <option value="17"  
+                >17</option>
+            <option value="18" selected 
+                >18</option>
+            <option value="19"  
+                >19</option>
+            <option value="20"  
+                >20</option>
+            <option value="21"  
+                >21</option>
+            <option value="22"  
+                >22</option>
+            <option value="23"  
+                >23</option>
+            <option value="24"  
+                >24</option>
+            <option value="25"  
+                >25</option>
+            <option value="26"  
+                >26</option>
+            <option value="27"  
+                >27</option>
+            <option value="28"  
+                >28</option>
+            <option value="29"  
+                >29</option>
+            <option value="30"  
+                >30</option>
+            <option value="31"  
+                >31</option>
+            <option value="32"  
+                >32</option>
+            <option value="33"  
+                >33</option>
+            <option value="34"  
+                >34</option>
+            <option value="35"  
+                >35</option>
+            <option value="36"  
+                >36</option>
+            <option value="37"  
+                >37</option>
+            <option value="38"  
+                >38</option>
+            <option value="39"  
+                >39</option>
+            <option value="40"  
+                >40</option>
+            <option value="41"  
+                >41</option>
+            <option value="42"  
+                >42</option>
+            <option value="43"  
+                >43</option>
+            <option value="44"  
+                >44</option>
+            <option value="45"  
+                >45</option>
+            <option value="46"  
+                >46</option>
+            <option value="47"  
+                >47</option>
+            <option value="48"  
+                >48</option>
+            <option value="49"  
+                >49</option>
+            <option value="50"  
+                >50</option>
+            <option value="51"  
+                >51</option>
+            <option value="52"  
+                >52</option>
+            <option value="53"  
+                >53</option>
+            <option value="54"  
+                >54</option>
+            <option value="55"  
+                >55</option>
+            <option value="56"  
+                >56</option>
+            <option value="57"  
+                >57</option>
+            <option value="58"  
+                >58</option>
+            <option value="59"  
+                >59</option>
+            <option value="60"  
+                >60</option>
+            <option value="61"  
+                >61</option>
+            <option value="62"  
+                >62</option>
+            <option value="63"  
+                >63</option>
+            <option value="64"  
+                >64</option>
+            <option value="65"  
+                >65</option>
+            <option value="66"  
+                >66</option>
+            <option value="67"  
+                >67</option>
+            <option value="68"  
+                >68</option>
+            <option value="69"  
+                >69</option>
+            <option value="70"  
+                >70</option>
+            <option value="71"  
+                >71</option>
+            <option value="72"  
+                >72</option>
+            <option value="73"  
+                >73</option>
+            <option value="74"  
+                >74</option>
+            <option value="75"  
+                >75</option>
+            <option value="76"  
+                >76</option>
+            <option value="77"  
+                >77</option>
+            <option value="78"  
+                >78</option>
+            <option value="79"  
+                >79</option>
+            <option value="80"  
+                >80</option>
+            <option value="81"  
+                >81</option>
+            <option value="82"  
+                >82</option>
+            <option value="83"  
+                >83</option>
+            <option value="84"  
+                >84</option>
+            <option value="85"  
+                >85</option>
+            <option value="86"  
+                >86</option>
+            <option value="87"  
+                >87</option>
+            <option value="88"  
+                >88</option>
+            <option value="89"  
+                >89</option>
+            <option value="90"  
+                >90</option>
+            <option value="91"  
+                >91</option>
+            <option value="92"  
+                >92</option>
+            <option value="93"  
+                >93</option>
+            <option value="94"  
+                >94</option>
+            <option value="95"  
+                >95</option>
+            <option value="96"  
+                >96</option>
+            <option value="97"  
+                >97</option>
+            <option value="98"  
+                >98</option>
+            <option value="99"  
+                >99</option>
+            <option value="100"  
+                >100</option>
+        </select>
+        <div class="form-control-feedback invalid-feedback" id="id_error_variant" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_saverestart" class="form-group row  fitem femptylabel  " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="submit">
+            <input type="submit"
+                class="btn
+                        btn-primary
+                        
+                    
+                    
+                    "
+                name="saverestart"
+                id="id_saverestart"
+                value="Start again with these options"
+                 >
+        <div class="form-control-feedback invalid-feedback" id="id_error_saverestart" >
+            
+        </div>
+    </div>
+</div>
+		</div></fieldset>
+	<fieldset class="clearfix collapsible collapsed"  id="id_displayoptionsheader"><legend class="d-flex align-items-center">
+        <div class="position-relative d-flex ftoggler align-items-center position-relative mr-1">
+            <a data-toggle="collapse"
+                href="#id_displayoptionsheadercontainer"
+                role="button"
+                aria-expanded="false"
+                aria-controls="id_displayoptionsheadercontainer"
+                class="btn btn-icon mr-1 icons-collapse-expand stretched-link fheader collapsed"
+                >
+                <span class="expanded-icon icon-no-margin p-2" title="Collapse">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true"  ></i>
+                </span>
+                <span class="collapsed-icon icon-no-margin p-2" title="Expand">
+                    <span class="dir-rtl-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                    <span class="dir-ltr-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                </span>
+                <span class="sr-only">Display options</span>
+            </a>
+            <h3 class="d-flex align-self-stretch align-items-center mb-0" aria-hidden="true">
+                Display options
+            </h3>
+        </div>
+        
+    </legend>
+<div id="id_displayoptionsheadercontainer" class="fcontainer collapseable collapse  "><div id="fitem_id_correctness" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_correctness">
+                    Whether correct
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="select">
+        <select class="custom-select
+                       
+                       "
+            name="correctness"
+            id="id_correctness"
+            
+            
+             >
+            <option value="0"  
+                >Not shown</option>
+            <option value="1" selected 
+                >Shown</option>
+        </select>
+        <div class="form-control-feedback invalid-feedback" id="id_error_correctness" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_marks" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_marks">
+                    Marks
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="select">
+        <select class="custom-select
+                       
+                       "
+            name="marks"
+            id="id_marks"
+            
+            
+             >
+            <option value="0"  
+                >Not shown</option>
+            <option value="1"  
+                >Show max mark only</option>
+            <option value="2" selected 
+                >Show mark and max</option>
+        </select>
+        <div class="form-control-feedback invalid-feedback" id="id_error_marks" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_markdp" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_markdp">
+                    Decimal places in grades
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="select">
+        <select class="custom-select
+                       
+                       "
+            name="markdp"
+            id="id_markdp"
+            
+            
+             >
+            <option value="0"  
+                >0</option>
+            <option value="1"  
+                >1</option>
+            <option value="2" selected 
+                >2</option>
+            <option value="3"  
+                >3</option>
+            <option value="4"  
+                >4</option>
+            <option value="5"  
+                >5</option>
+            <option value="6"  
+                >6</option>
+            <option value="7"  
+                >7</option>
+        </select>
+        <div class="form-control-feedback invalid-feedback" id="id_error_markdp" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_feedback" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_feedback">
+                    Specific feedback
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="select">
+        <select class="custom-select
+                       
+                       "
+            name="feedback"
+            id="id_feedback"
+            
+            
+             >
+            <option value="0"  
+                >Not shown</option>
+            <option value="1" selected 
+                >Shown</option>
+        </select>
+        <div class="form-control-feedback invalid-feedback" id="id_error_feedback" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_generalfeedback" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_generalfeedback">
+                    General feedback
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="select">
+        <select class="custom-select
+                       
+                       "
+            name="generalfeedback"
+            id="id_generalfeedback"
+            
+            
+             >
+            <option value="0"  
+                >Not shown</option>
+            <option value="1" selected 
+                >Shown</option>
+        </select>
+        <div class="form-control-feedback invalid-feedback" id="id_error_generalfeedback" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_rightanswer" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_rightanswer">
+                    Right answer
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="select">
+        <select class="custom-select
+                       
+                       "
+            name="rightanswer"
+            id="id_rightanswer"
+            
+            
+             >
+            <option value="0"  
+                >Not shown</option>
+            <option value="1" selected 
+                >Shown</option>
+        </select>
+        <div class="form-control-feedback invalid-feedback" id="id_error_rightanswer" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_history" class="form-group row  fitem   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+                <label class="d-inline word-break " for="id_history">
+                    Response history
+                </label>
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="select">
+        <select class="custom-select
+                       
+                       "
+            name="history"
+            id="id_history"
+            
+            
+             >
+            <option value="0" selected 
+                >Not shown</option>
+            <option value="1"  
+                >Shown</option>
+        </select>
+        <div class="form-control-feedback invalid-feedback" id="id_error_history" >
+            
+        </div>
+    </div>
+</div><div id="fitem_id_saveupdate" class="form-group row  fitem femptylabel  " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pr-md-0">
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="submit">
+            <input type="submit"
+                class="btn
+                        btn-primary
+                        
+                    
+                    
+                    "
+                name="saveupdate"
+                id="id_saveupdate"
+                value="Update display options"
+                 >
+        <div class="form-control-feedback invalid-feedback" id="id_error_saveupdate" >
+            
+        </div>
+    </div>
+</div>
+		</div></fieldset>
+</form>
+<div id="techinfo" class="collapsibleregion "><div id="techinfo_sizer"><div id="techinfo_caption" class="collapsibleregioncaption">Technical information </div><div class="collapsibleregionextracontent"><a class="btn btn-link p-0" role="button"
+    data-container="body" data-toggle="popover"
+    data-placement="right" data-content="&lt;div class=&quot;no-overflow&quot;&gt;&lt;p&gt;This technical information is probably only useful for developers working on new question types. It may also be helpful when trying to diagnose problems with questions.&lt;/p&gt;
+&lt;/div&gt; "
+    data-html="true" tabindex="0" data-trigger="focus">
+  <i class="icon fa fa-question-circle text-info fa-fw "  title="Help with Technical information" role="img" aria-label="Help with Technical information"></i>
+</a></div><div id="techinfo_inner" class="collapsibleregioninner"><p class="notifytiny">Behaviour being used: Deferred feedback with explicit validation</p><p class="notifytiny">Minimum fraction: 0</p><p class="notifytiny">Maximum fraction: 1</p><p class="notifytiny">Question variant: 18</p><p class="notifytiny">Question summary: 1</p><p class="notifytiny">Right answer summary: Seed: 18; ans1: 1 [score]; prt1: # = 1 | prt1-1-T</p><p class="notifytiny">Response summary: </p><p class="notifytiny">Question state: todo</p></div></div></div>
+    <h3>Question custom fields</h3></div>
+                    
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://ecampus.idems.international/lib/requirejs.php/1687299139/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://ecampus.idems.international/lib/javascript.php/1687299139/lib/jquery/jquery-3.6.0.min',
+        jqueryui: 'https://ecampus.idems.international/lib/javascript.php/1687299139/lib/jquery/ui-1.13.0/jquery-ui.min',
+        jqueryprivate: 'https://ecampus.idems.international/lib/javascript.php/1687299139/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://ecampus.idems.international/lib/javascript.php/1687299139/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+    M.util.js_complete('theme_boost/loader');
+});
+;
+M.util.js_pending('qtype_stack/input'); require(['qtype_stack/input'], function(amd) {amd.initInputs("question-325836-1", "q325836:1_", 1329966, ["ans1"]); M.util.js_complete('qtype_stack/input');});;
+M.util.js_pending('core_form/changechecker'); require(['core_form/changechecker'], function(amd) {amd.watchFormById("mform1_BKgooAHJJCgC3iv"); M.util.js_complete('core_form/changechecker');});;
+
+require(['core_form/collapsesections'], function(Collapsesections) {
+    Collapsesections.init('#collapsesections64d4a2343adc664d4a234391525');
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_version");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_behaviour");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_maxmark");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_variant");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_saverestart");
+});
+;
+
+        require(['core_form/submit'], function(Submit) {
+            Submit.init("id_saverestart");
+        });
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_correctness");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_marks");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_markdp");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_feedback");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_generalfeedback");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_rightanswer");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_history");
+});
+;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_saveupdate");
+});
+;
+
+        require(['core_form/submit'], function(Submit) {
+            Submit.init("id_saveupdate");
+        });
+;
+M.util.js_pending('qbank_previewquestion/preview'); require(['qbank_previewquestion/preview'], function(amd) {amd.init(false, "https:\/\/ecampus.idems.international\/question\/edit.php?courseid=312"); M.util.js_complete('qbank_previewquestion/preview');});;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(86125, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/ecampus.idems.international\/lib\/javascript.php\/1687299139\/question\/qengine.js","requires":["node","event"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/ecampus.idems.international\/lib\/javascript.php\/1687299139\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}});
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","addcomment":"Add a comment...","comments":"Comments","commentscount":"Comments ({$a})","commentsrequirelogin":"You need to log in to view the comments.","deletecommentbyon":"Delete comment posted by {$a->user} on {$a->time}","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\",\r\n    CommonHTML: { linebreaks: { automatic: true } },\r\n    \"HTML-CSS\": { linebreaks: { automatic: true } },\r\n    SVG: { linebreaks: { automatic: true } }\r\n});","lang":"en"});
+});
+ M.util.js_pending('random64d4a234391521'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/ecampus.idems.international\/question\/toggleflag.php", [{"src":"https:\/\/ecampus.idems.international\/theme\/image.php\/classic\/core\/1687299139\/i\/unflagged","title":"Flag this question for future reference","alt":"Flagged","text":"Flag question"},{"src":"https:\/\/ecampus.idems.international\/theme\/image.php\/classic\/core\/1687299139\/i\/flagged","title":"Remove flag","alt":"Flagged","text":"Remove flag"}]);  M.util.js_complete('random64d4a234391521'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random64d4a234391523'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q325836:1_-submit");  M.util.js_complete('random64d4a234391523'); });
+M.util.init_collapsible_region(Y, "techinfo", "core_question_preview_techinfo_collapsed", "Click to expand or collapse");
+Y.use("moodle-form-shortforms",function() {M.form.shortforms({"formid":"mform1_BKgooAHJJCgC3iv"});
+});
+ M.util.js_pending('random64d4a234391526'); Y.on('domready', function() {  M.util.js_pending('random64d4a234391526'); Y.use('core_comment', function(Y) { M.core_comment.init(Y, {"client_id":"64d4a2343bc63","commentarea":"question","itemid":"116193","page":0,"courseid":312,"contextid":1,"component":"qbank_comment","notoggle":true,"autostart":true});  M.util.js_complete('random64d4a234391526'); });  M.util.js_complete('random64d4a234391526'); });
+ M.util.js_pending('random64d4a234391527'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random64d4a234391527'); });
+})();
+//]]>
+</script>
+
+</body>
+</html>

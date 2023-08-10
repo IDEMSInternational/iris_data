@@ -1,0 +1,25 @@
+<div id="data-container"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+    const dataContainer = document.getElementById("data-container");
+
+    try {
+        const response = await fetch("https://raw.githubusercontent.com/IDEMSInternational/iris_data/main/all_data.json");
+        const jsonData = await response.json();
+
+        const pre = document.createElement("pre");
+        pre.textContent = JSON.stringify(jsonData, null, 2);
+        dataContainer.appendChild(pre);
+    } catch (error) {
+        dataContainer.innerHTML = "Error loading JSON data.";
+        console.error("Error fetching JSON data:", error);
+    }
+});
+</script>
+
+
+
+
+
+
