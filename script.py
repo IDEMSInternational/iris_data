@@ -1,5 +1,5 @@
 # Number of files
-num_files = 20
+num_files = 400
 
 # Initialize lists for each variable
 mean_sl_values = []
