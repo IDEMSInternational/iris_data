@@ -46,23 +46,23 @@ for n in range(num_files):
 
 # Store all lists in a dictionary for easier access
 data_lists = {
-    "MeanSL": mean_sl_values,
-    "size": size_values,
-    "VarSL": var_sl_values,
-    "MeanSL_Se": mean_sl_se_values,
-    "MeanSL_Vi": mean_sl_vi_values,
-    "MeanSL_Ve": mean_sl_ve_values,
-    "VarSL_Se": var_sl_se_values,
-    "VarSL_Vi": var_sl_vi_values,
-    "VarSL_Ve": var_sl_ve_values,
-    "Length_Se": length_se_values,
-    "Length_Vi": length_vi_values,
-    "Length_Ve": length_ve_values,
-    "DF_WS": df_ws_values
+    "MeanSL_list": mean_sl_values,
+    "size_list": size_values,
+    "VarSL_list": var_sl_values,
+    "MeanSL_Se_list": mean_sl_se_values,
+    "MeanSL_Vi_list": mean_sl_vi_values,
+    "MeanSL_Ve_list": mean_sl_ve_values,
+    "VarSL_Se_list": var_sl_se_values,
+    "VarSL_Vi_list": var_sl_vi_values,
+    "VarSL_Ve_list": var_sl_ve_values,
+    "Length_Se_list": length_se_values,
+    "Length_Vi_list": length_vi_values,
+    "Length_Ve_list": length_ve_values,
+    "DF_WS_list": df_ws_values
 }
 
 # Write the 13 lists into all_data.txt
-with open("all_data.txt", "w") as output_file:
+with open("all_data_variables.txt", "w") as output_file:
     for variable, values in data_lists.items():
         formatted_data = f"{variable}: {values};"
         output_file.write(formatted_data + '\n')
