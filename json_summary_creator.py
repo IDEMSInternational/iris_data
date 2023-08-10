@@ -19,7 +19,7 @@ for n in range(400):
     except FileNotFoundError:
         print(f"Data file {data_path} not found.")
 
-with open('simplified_data.json', 'w') as json_file:
+with open('all_data.json', 'w') as json_file:
     json.dump(data, json_file, indent=2)
 
-print("Simplified JSON data created as simplified_data.json.")
+print("JSON data created as all_data.json.")
